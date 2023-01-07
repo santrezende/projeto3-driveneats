@@ -4,10 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body {
-    width: 415 px;
-}
-
-body {
     background-color: #EEEEEE;
 }
 
@@ -71,6 +67,7 @@ h3 {
 .container {
     margin-top: 8px;
     display: flex;
+    overflow-x: scroll;
 }
 
 .icone {
@@ -84,10 +81,19 @@ h3 {
 
 }
 
-img {
-    border-radius: 4px;
+.div-img {
+    border-radius: 15px;
     padding-top: 10px;
-    padding-left: 9px;
+    width: auto;
+    height: 87px;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    border-radius: 10px;
+    max-width: 144px;
+    height: 87px;
 }
 
 h4 {
@@ -149,6 +155,8 @@ footer {
     background-color: #FFFFFF;
     width: 100%;
     height: 92px;
+    display: flex;
+    justify-content: center;
 }
 
 #fechar-pedido {
@@ -157,7 +165,6 @@ footer {
     background-color: #CBCBCB;
     border-radius: 50px;
     margin-top: 17px;
-    margin-left: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,7 +177,6 @@ p {
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
-    text-align: center;
     letter-spacing: 0.018em;
     color: #FFFFFF;
 }
