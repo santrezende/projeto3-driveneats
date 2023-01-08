@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <div class="finalizado">
+  <div class="app">
     <header>
       <h1>
         DrivenEats
@@ -37,7 +37,7 @@
           Primeiro, seu prato
         </h3>
         <div class="container">
-          <div onclick="escolherfrango()" id="frango" class="icone">
+          <div onclick="escolherfrango(), verificadora()" id="frango" class="icone">
             <div class="div-img">
               <img src="img/frango.png">
             </div>
@@ -54,7 +54,7 @@
               <ion-icon id="check-frango" class="escondido" name="checkmark-circle"></ion-icon>
             </div>
           </div>
-          <div onclick="escolhercarne()" id="carne" class="icone">
+          <div onclick="escolhercarne(), verificadora()" id="carne" class="icone">
             <div class="div-img">
               <img src="img/carnebovina.jpeg">
             </div>
@@ -71,7 +71,7 @@
               <ion-icon id="check-carne" class="escondido" name="checkmark-circle"></ion-icon>
             </div>
           </div>
-          <div onclick="escolherpeixe()" id="peixe" class="icone">
+          <div onclick="escolherpeixe(), verificadora()" id="peixe" class="icone">
             <div class="div-img">
               <img src="img/peixe.jpg">
             </div>
@@ -88,7 +88,7 @@
               <ion-icon id="check-peixe" class="escondido" name="checkmark-circle"></ion-icon>
             </div>
           </div>
-          <div onclick="escolheromelete()" id="omelete" class="icone">
+          <div onclick="escolheromelete(), verificadora()" id="omelete" class="icone">
             <div class="div-img">
               <img src="img/omelete.jpg">
             </div>
@@ -112,7 +112,7 @@
           Agora, sua bebida
         </h3>
         <div class="container">
-          <div onclick="escolhercoca()" id="coca" class="icone">
+          <div onclick="escolhercoca(), verificadora()" id="coca" class="icone">
             <div class="div-img">
               <img src="img/coca.jpg">
             </div>
@@ -129,7 +129,7 @@
               <ion-icon id="check-coca" class="escondido" name="checkmark-circle"></ion-icon>
             </div>
           </div>
-          <div onclick="escolherguarana()" id="guarana" class="icone">
+          <div onclick="escolherguarana(), verificadora()" id="guarana" class="icone">
             <div class="div-img">
               <img src="img/guarana.png">
             </div>
@@ -146,7 +146,7 @@
               <ion-icon id="check-guarana" class="escondido" name="checkmark-circle"></ion-icon>
             </div>
           </div>
-          <div onclick="escolhersuco()" id="suco" class="icone">
+          <div onclick="escolhersuco(), verificadora()" id="suco" class="icone">
             <div class="div-img">
               <img src="img/sucolaranja.jpg">
             </div>
@@ -163,7 +163,7 @@
               <ion-icon id="check-suco" class="escondido" name="checkmark-circle"></ion-icon>
             </div>
           </div>
-          <div onclick="escolheragua()" id="agua" class="icone">
+          <div onclick="escolheragua(), verificadora()" id="agua" class="icone">
             <div class="div-img">
               <img src="img/agua.jpg">
             </div>
@@ -186,7 +186,7 @@
           Por fim, sua sobremesa
         </h3>
         <div class="container">
-          <div onclick="escolherpudim()" id="pudim" class="icone">
+          <div onclick="escolherpudim(), verificadora()" id="pudim" class="icone">
             <div class="div-img">
               <img src="img/pudim.jpeg">
             </div>
@@ -203,7 +203,7 @@
               <ion-icon id="check-pudim" class="escondido" name="checkmark-circle"></ion-icon>
             </div>
           </div>
-          <div onclick="escolhersorvete()" id="sorvete" class="icone">
+          <div onclick="escolhersorvete(), verificadora()" id="sorvete" class="icone">
             <div class="div-img">
               <img src="img/sorvete.jpg">
             </div>
@@ -220,7 +220,7 @@
               <ion-icon id="check-sorvete" class="escondido" name="checkmark-circle"></ion-icon>
             </div>
           </div>
-          <div onclick="escolherbrownie()" id="brownie" class="icone">
+          <div onclick="escolherbrownie(), verificadora()" id="brownie" class="icone">
             <div class="div-img">
               <img src="img/brownie.jpg">
             </div>
@@ -237,7 +237,7 @@
               <ion-icon id="check-brownie" class="escondido" name="checkmark-circle"></ion-icon>
             </div>
           </div>
-          <div onclick="escolhercookie()" id="cookie" class="icone">
+          <div onclick="escolhercookie(), verificadora()" id="cookie" class="icone">
             <div class="div-img">
               <img src="img/cookie.jpeg">
             </div>
@@ -258,10 +258,35 @@
       </section>
     </div>
     <footer>
-      <div id="fechar-pedido" onclick="fecharpedido()">
+      <button disabled id="fechar-pedido" onclick="fecharpedido()">
         <p>Selecione os 3 itens<br>para fechar o pedido</p>
-      </div>
+      </button>
     </footer>
+  </div>
+  <div class="pedido-final">
+    <div class="confirma">
+      <p class="titulo">Confirme seu pedido</p>
+      <div class="prato">
+        <p>Frango Yin Yang</p>
+        <p>14,90</p>
+      </div>
+      <div class="bebida">
+        <p>Frango Yin Yang</p>
+        <p>14,90</p>
+      </div>
+      <div class="sobremesa">
+        <p>Frango Yin Yang</p>
+        <p>14,90</p>
+      </div>
+      <div class="total">
+        <p>TOTAL</p>
+        <p>14,90</p>
+      </div>
+      <div class="enviar">
+        <p>Tudo certo, pode pedir!</p>
+      </div>
+      <p class="botaocancela">Cancelar</p>
+    </div>
   </div>
   <script src="script.js"></script>
   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

@@ -1,8 +1,8 @@
 let prato, bebida, sobremesa;
 
 function escolherfrango() {
-    document.getElementById("frango").style.borderColor = "#32B72F"; // borda
-    document.getElementById("carne").style.borderColor = "#FFFFFF"; // borda
+    document.getElementById("frango").style.borderColor = "#32B72F";
+    document.getElementById("carne").style.borderColor = "#FFFFFF";
     document.getElementById("peixe").style.borderColor = "#FFFFFF"; // borda
     document.getElementById("omelete").style.borderColor = "#FFFFFF"; // borda
 
@@ -12,6 +12,7 @@ function escolherfrango() {
     document.getElementById("check-omelete").classList.add("escondido"); // check
 
     prato = "frango";
+
 }
 
 function escolhercarne() {
@@ -29,13 +30,13 @@ function escolhercarne() {
 }
 
 function escolherpeixe() {
-    document.getElementById("peixe").style.borderColor = "#32B72F"; // borda
-    document.getElementById("carne").style.borderColor = "#FFFFFF"; // borda
+    document.getElementById("peixe").style.borderColor = "#32B72F";
+    document.getElementById("carne").style.borderColor = "#FFFFFF";
     document.getElementById("frango").style.borderColor = "#FFFFFF"; // borda
     document.getElementById("omelete").style.borderColor = "#FFFFFF"; // borda
 
-    document.getElementById("check-peixe").classList.remove("escondido"); // check
-    document.getElementById("check-carne").classList.add("escondido"); // check
+    document.getElementById("check-peixe").classList.remove("escondido");
+    document.getElementById("check-carne").classList.add("escondido");
     document.getElementById("check-frango").classList.add("escondido"); // check
     document.getElementById("check-omelete").classList.add("escondido"); // check
 
@@ -43,13 +44,13 @@ function escolherpeixe() {
 }
 
 function escolheromelete() {
-    document.getElementById("omelete").style.borderColor = "#32B72F"; // borda
-    document.getElementById("carne").style.borderColor = "#FFFFFF"; // borda
+    document.getElementById("omelete").style.borderColor = "#32B72F";
+    document.getElementById("carne").style.borderColor = "#FFFFFF";
     document.getElementById("peixe").style.borderColor = "#FFFFFF"; // borda
     document.getElementById("frango").style.borderColor = "#FFFFFF"; // borda
 
-    document.getElementById("check-omelete").classList.remove("escondido"); // check
-    document.getElementById("check-carne").classList.add("escondido"); // check
+    document.getElementById("check-omelete").classList.remove("escondido");
+    document.getElementById("check-carne").classList.add("escondido");
     document.getElementById("check-peixe").classList.add("escondido"); // check
     document.getElementById("check-frango").classList.add("escondido"); // check
 
@@ -169,6 +170,20 @@ function escolherbrownie() {
     sobremesa = "brownie";
 }
 
+const botao = document.getElementById("fechar-pedido");
+
+function verificadora() {
+    if (prato != null) {
+        if (bebida != null) {
+            if (sobremesa != null) {
+                botao.style.backgroundColor = "#32B72F";
+                botao.innerHTML = "Fechar Pedido";
+                botao.disabled = false;
+            }
+        }
+    }
+}
+
 function fecharpedido() {
-    alert(prato + bebida + sobremesa);
+    alert("bebida");
 }
