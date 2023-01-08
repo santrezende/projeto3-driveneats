@@ -246,9 +246,11 @@ function cancelar() {
 
 
 function finalizar() {
+    let nome = prompt("Qual o seu nome?");
+    let endereco = prompt("Qual o seu endereço?");
 
     let valortotal = String((valorprato + valorbebida + valorsobremesa).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
-    var mensagem = "Olá, gostaria de fazer o pedido:\n- " + prato + "\n- Bebida: " + bebida + "\n- Sobremesa: " + sobremesa + "\nTotal: " + valortotal;
+    var mensagem = "Olá, gostaria de fazer o pedido:\n- " + prato + "\n- Bebida: " + bebida + "\n- Sobremesa: " + sobremesa + "\nTotal: " + valortotal + "\n\nNome: " + nome + "\nEndereço: " + endereco;
     mensagem = window.encodeURIComponent(mensagem);
     window.open("https://wa.me/5531995015793?text=" + mensagem);
 }
