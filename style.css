@@ -17,6 +17,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 h1 {
@@ -53,7 +54,6 @@ h2 {
 
 section {
     margin-top: 30px;
-    padding-left: 20px;
 }
 
 h3 {
@@ -64,12 +64,14 @@ h3 {
     line-height: 32px;
     letter-spacing: 0.018em;
     color: #333333;
+    padding-left: 20px;
 }
 
 .container {
     margin-top: 8px;
     display: flex;
     overflow-x: scroll;
+    padding-left: 20px;
 }
 
 .icone {
@@ -289,11 +291,16 @@ p,
 
 .botaocancela {
     margin-top: 20px;
-    letter-spacing: 0.018em;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
     cursor: pointer;
+    background-color: #50D074;
 }
