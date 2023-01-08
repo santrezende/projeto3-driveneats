@@ -5,7 +5,10 @@
 
 body {
     background-color: #EEEEEE;
-    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
 }
 
 header {
@@ -71,6 +74,10 @@ h3 {
     display: flex;
     overflow-x: scroll;
     padding-left: 20px;
+}
+
+.container::-webkit-scrollbar {
+    width: 0px;
 }
 
 .icone {
