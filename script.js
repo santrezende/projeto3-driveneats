@@ -248,8 +248,6 @@ function cancelar() {
 function finalizar() {
 
     let valortotal = String((valorprato + valorbebida + valorsobremesa).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
-    console.log(valortotal);
-
     var mensagem = "Olá, gostaria de fazer o pedido:\n- " + prato + "\n- Bebida: " + bebida + "\n- Sobremesa: " + sobremesa + "\nTotal: " + valortotal;
     mensagem = window.encodeURIComponent(mensagem);
     window.open("https://wa.me/5531995015793?text=" + mensagem);
