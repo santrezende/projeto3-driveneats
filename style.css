@@ -195,7 +195,7 @@ p,
 
 /* Aqui termina o CSS do rodape */
 
-.pedido-final {
+#pedido-final {
     position: fixed;
     top: 0px;
     width: 100%;
@@ -205,6 +205,7 @@ p,
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    display: none;
 }
 
 .confirma {
@@ -275,6 +276,7 @@ p,
     align-items: center;
     background-color: #FFFFFF;
     border-radius: 100px;
+    cursor: pointer;
 }
 
 .enviar p {
@@ -293,4 +295,5 @@ p,
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
+    cursor: pointer;
 }

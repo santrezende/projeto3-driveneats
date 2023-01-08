@@ -1,4 +1,10 @@
 let prato, bebida, sobremesa;
+let valorprato = parseFloat();
+let valorbebida = parseFloat()
+let valorsobremesa = parseFloat();
+let pratourl = String();
+let bebidaurl = String();
+let sobremesaurl = String();
 
 function escolherfrango() {
     document.getElementById("frango").style.borderColor = "#32B72F";
@@ -11,8 +17,9 @@ function escolherfrango() {
     document.getElementById("check-peixe").classList.add("escondido"); // check
     document.getElementById("check-omelete").classList.add("escondido"); // check
 
-    prato = "frango";
-
+    prato = "Prato de Frango";
+    valorprato = Number(14.90);
+    pratourl = "Prato%de%Frango"
 }
 
 function escolhercarne() {
@@ -26,7 +33,9 @@ function escolhercarne() {
     document.getElementById("check-peixe").classList.add("escondido"); // check
     document.getElementById("check-omelete").classList.add("escondido"); // check
 
-    prato = "carne";
+    prato = "Prato de Carne Bovina";
+    valorprato = Number(18.90);
+    pratourl = "Prato%de%Carne%Bovina";
 }
 
 function escolherpeixe() {
@@ -40,7 +49,9 @@ function escolherpeixe() {
     document.getElementById("check-frango").classList.add("escondido"); // check
     document.getElementById("check-omelete").classList.add("escondido"); // check
 
-    prato = "peixe";
+    prato = "Prato de Peixe";
+    valorprato = Number(16.90);
+    pratourl = "Prato%de%Peixe";
 }
 
 function escolheromelete() {
@@ -54,7 +65,9 @@ function escolheromelete() {
     document.getElementById("check-peixe").classList.add("escondido"); // check
     document.getElementById("check-frango").classList.add("escondido"); // check
 
-    prato = "omelete";
+    prato = "Prato de Omelete";
+    valorprato = Number(12.90);
+    pratourl = "Prato%de%Omelete";
 }
 
 function escolhercoca() {
@@ -69,7 +82,9 @@ function escolhercoca() {
     document.getElementById("check-agua").classList.add("escondido"); // check
 
 
-    bebida = "coca";
+    bebida = "Coca-Cola";
+    valorbebida = Number(5.90);
+    bebidaurl = "Coca-Cola";
 }
 
 function escolherguarana() {
@@ -83,7 +98,9 @@ function escolherguarana() {
     document.getElementById("check-suco").classList.add("escondido"); // check
     document.getElementById("check-agua").classList.add("escondido"); // check
 
-    bebida = "guarana";
+    bebida = "Guaraná Antartica";
+    valorbebida = Number(4.90);
+    bebidaurl = "Guaraná%Antartica";
 }
 
 function escolhersuco() {
@@ -97,7 +114,9 @@ function escolhersuco() {
     document.getElementById("check-guarana").classList.add("escondido"); // check
     document.getElementById("check-agua").classList.add("escondido"); // check
 
-    bebida = "suco";
+    bebida = "Suco de Laranja";
+    valorbebida = Number(7.90);
+    bebidaurl = "Suco%de%Laranja";
 }
 
 function escolheragua() {
@@ -111,7 +130,9 @@ function escolheragua() {
     document.getElementById("check-suco").classList.add("escondido"); // check
     document.getElementById("check-guarana").classList.add("escondido"); // check
 
-    bebida = "agua";
+    bebida = "Água sem Gás";
+    valorbebida = Number(3.90);
+    bebidaurl = "Água%sem%Gás";
 }
 
 function escolherpudim() {
@@ -125,7 +146,9 @@ function escolherpudim() {
     document.getElementById("check-cookie").classList.add("escondido"); // check
     document.getElementById("check-brownie").classList.add("escondido"); // check
 
-    sobremesa = "pudim";
+    sobremesa = "Pudim";
+    valorsobremesa = Number(3.90);
+    sobremesaurl = "Pudim"
 }
 
 function escolhersorvete() {
@@ -139,7 +162,9 @@ function escolhersorvete() {
     document.getElementById("check-cookie").classList.add("escondido"); // check
     document.getElementById("check-brownie").classList.add("escondido"); // check
 
-    sobremesa = "sorvete"
+    sobremesa = "Sorvete Artesanal";
+    valorsobremesa = Number(6.90);
+    sobremesaurl = "Sorvete%Artesanal";
 }
 
 function escolhercookie() {
@@ -153,7 +178,9 @@ function escolhercookie() {
     document.getElementById("check-pudim").classList.add("escondido"); // check
     document.getElementById("check-brownie").classList.add("escondido"); // check
 
-    sobremesa = "cookie";
+    sobremesa = "Cookie";
+    valorsobremesa = Number(4.90);
+    sobremesaurl = "Cookie";
 }
 
 function escolherbrownie() {
@@ -167,7 +194,9 @@ function escolherbrownie() {
     document.getElementById("check-cookie").classList.add("escondido"); // check
     document.getElementById("check-cookie").classList.add("escondido"); // check
 
-    sobremesa = "brownie";
+    sobremesa = "Brownie";
+    valorsobremesa = Number(5.90);
+    sobremesaurl = "Brownie";
 }
 
 const botao = document.getElementById("fechar-pedido");
@@ -183,7 +212,45 @@ function verificadora() {
         }
     }
 }
+const divconfirma = document.getElementById("pedido-final");
+
+const pratoescolhido = document.getElementById("prato-escolhido");
+const bebidaescolhida = document.getElementById("bebida-escolhida");
+const sobremesaescolhida = document.getElementById("sobremesa-escolhida");
+
+const precoprato = document.getElementById("preco-prato");
+const precobebida = document.getElementById("preco-bebida");
+const precosobremesa = document.getElementById("preco-sobremesa");
+
+const precototal = document.getElementById("valor-total");
 
 function fecharpedido() {
-    alert("bebida");
+
+    divconfirma.style.display = "flex";
+
+    pratoescolhido.innerHTML = prato;
+    bebidaescolhida.innerHTML = bebida;
+    sobremesaescolhida.innerHTML = sobremesa;
+
+    precoprato.innerHTML = valorprato.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    precobebida.innerHTML = valorbebida.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    precosobremesa.innerHTML = valorsobremesa.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+    precototal.innerHTML = (valorprato + valorbebida + valorsobremesa).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+}
+
+function cancelar() {
+
+    divconfirma.style.display = "none";
+}
+
+
+function finalizar() {
+
+    let valortotal = String((valorprato + valorbebida + valorsobremesa).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    console.log(valortotal);
+
+    var mensagem = "Olá, gostaria de fazer o pedido:\n- " + prato + "\n- Bebida: " + bebida + "\n- Sobremesa: " + sobremesa + "\nTotal: " + valortotal;
+    mensagem = window.encodeURIComponent(mensagem);
+    window.open("https://wa.me/5531995015793?text=" + mensagem);
 }

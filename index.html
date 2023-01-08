@@ -117,7 +117,7 @@
               <img src="img/coca.jpg">
             </div>
             <h4>
-              Coca Cola
+              Coca-Cola
             </h4>
             <h5>
               Lata 350ml
@@ -263,29 +263,29 @@
       </button>
     </footer>
   </div>
-  <div class="pedido-final">
+  <div id="pedido-final">
     <div class="confirma">
       <p class="titulo">Confirme seu pedido</p>
       <div class="prato">
-        <p>Frango Yin Yang</p>
-        <p>14,90</p>
+        <p id="prato-escolhido">Prato Escolhido</p>
+        <p id="preco-prato">Valor Prato</p>
       </div>
       <div class="bebida">
-        <p>Frango Yin Yang</p>
-        <p>14,90</p>
+        <p id="bebida-escolhida">Bebida Escolhida</p>
+        <p id="preco-bebida">Valor Bebida</p>
       </div>
       <div class="sobremesa">
-        <p>Frango Yin Yang</p>
-        <p>14,90</p>
+        <p id="sobremesa-escolhida">Sobremesa Escolhida</p>
+        <p id="preco-sobremesa">Valor Sobremesa</p>
       </div>
       <div class="total">
         <p>TOTAL</p>
-        <p>14,90</p>
+        <p id="valor-total">Soma dos Escolhidos</p>
       </div>
-      <div class="enviar">
+      <button onclick="finalizar()" class="enviar">
         <p>Tudo certo, pode pedir!</p>
-      </div>
-      <p class="botaocancela">Cancelar</p>
+      </button>
+      <p onclick="cancelar()" class="botaocancela">Cancelar</p>
     </div>
   </div>
   <script src="script.js"></script>
