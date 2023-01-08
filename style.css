@@ -3,303 +3,306 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-body {
-    background-color: #EEEEEE;
-    max-width: 500px;
-}
+@media (max-width: 614px) {
 
-header {
-    height: 92px;
-    width: 100%;
-    background-color: #CF2B2B;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
+    body {
+        background-color: #EEEEEE;
+        max-width: 500px;
+    }
 
-h1 {
-    height: 45px;
-    font-family: 'Righteous';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 44px;
-    line-height: 55px;
-    letter-spacing: -0.012em;
-    color: #FFFFFF;
-    padding-left: 20px;
-    padding-top: 10px;
-}
+    header {
+        height: 92px;
+        width: 100%;
+        background-color: #CF2B2B;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
 
-h2 {
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0em;
-    color: #FFFFFF;
-    padding-left: 20px;
-    margin-top: 5px;
+    h1 {
+        height: 45px;
+        font-family: 'Righteous';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 55px;
+        letter-spacing: -0.012em;
+        color: #FFFFFF;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
 
-}
+    h2 {
+        font-family: 'Roboto';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        color: #FFFFFF;
+        padding-left: 20px;
+        margin-top: 5px;
 
-/* Aqui acaba o CSS do header */
+    }
 
-.conteudo {
-    margin-top: 122px;
-    margin-bottom: 105px;
-}
+    /* Aqui acaba o CSS do header */
 
-section {
-    margin-top: 30px;
-}
+    .conteudo {
+        margin-top: 122px;
+        margin-bottom: 105px;
+    }
 
-h3 {
-    font-family: 'Righteous';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 32px;
-    letter-spacing: 0.018em;
-    color: #333333;
-    padding-left: 20px;
-}
+    section {
+        margin-top: 30px;
+    }
 
-.container {
-    margin-top: 8px;
-    display: flex;
-    overflow-x: scroll;
-    padding-left: 20px;
-}
+    h3 {
+        font-family: 'Righteous';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 32px;
+        letter-spacing: 0.018em;
+        color: #333333;
+        padding-left: 20px;
+    }
 
-.icone {
-    width: 172px;
-    background-color: #FFFFFF;
-    border-radius: 9px;
-    margin-right: 16px;
-    box-sizing: border-box;
-    border: 5px solid #FFFFFF;
-    cursor: pointer;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    .container {
+        margin-top: 8px;
+        display: flex;
+        overflow-x: scroll;
+        padding-left: 20px;
+    }
 
-}
+    .icone {
+        width: 172px;
+        background-color: #FFFFFF;
+        border-radius: 9px;
+        margin-right: 16px;
+        box-sizing: border-box;
+        border: 5px solid #FFFFFF;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 
-.div-img {
-    border-radius: 15px;
-    padding-top: 10px;
-    width: auto;
-    height: 87px;
-    display: flex;
-    justify-content: center;
-}
+    }
 
-img {
-    border-radius: 10px;
-    max-width: 144px;
-    height: 87px;
-}
+    .div-img {
+        border-radius: 15px;
+        padding-top: 10px;
+        width: auto;
+        height: 87px;
+        display: flex;
+        justify-content: center;
+    }
 
-h4 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    color: #333333;
-    margin-top: 8px;
-    margin-left: 10px;
-}
+    img {
+        border-radius: 10px;
+        max-width: 144px;
+        height: 87px;
+    }
 
-h5 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 18px;
-    color: #A6A6A6;
-    width: 147px;
-    margin-left: 10px;
-    margin-top: 5px;
-}
+    h4 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
+        margin-top: 8px;
+        margin-left: 10px;
+    }
 
-.preco-icon {
-    display: flex;
-    justify-content: space-between;
-}
+    h5 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        color: #A6A6A6;
+        width: 147px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
 
-h6 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-    margin-top: 8px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
+    .preco-icon {
+        display: flex;
+        justify-content: space-between;
+    }
 
-ion-icon {
-    color: green;
-    margin-top: 10px;
-    padding-right: 8px;
-}
+    h6 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        margin-top: 8px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
 
-.escondido {
-    display: none;
-}
+    ion-icon {
+        color: green;
+        margin-top: 10px;
+        padding-right: 8px;
+    }
 
-/* Aqui termina o CSS do conteudo */
+    .escondido {
+        display: none;
+    }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: #FFFFFF;
-    width: 100%;
-    height: 92px;
-    display: flex;
-    justify-content: center;
-}
+    /* Aqui termina o CSS do conteudo */
 
-button {
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-}
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 92px;
+        display: flex;
+        justify-content: center;
+    }
 
-#fechar-pedido {
-    width: 364px;
-    height: 61px;
-    background-color: #CBCBCB;
-    border-radius: 50px;
-    margin-top: 17px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
+    button {
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+    }
 
-.texto-fecharpedido {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: 0.018em;
-    color: #FFFFFF;
-    width: 200px;
-}
+    #fechar-pedido {
+        width: 364px;
+        height: 61px;
+        background-color: #CBCBCB;
+        border-radius: 50px;
+        margin-top: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
 
-/* Aqui termina o CSS do rodape */
+    .texto-fecharpedido {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.018em;
+        color: #FFFFFF;
+        width: 200px;
+    }
 
-#pedido-final {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    display: none;
-}
+    /* Aqui termina o CSS do rodape */
 
-.confirma {
-    width: 377px;
-    height: 353px;
-    background-color: #50D074;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
-    border-radius: 9px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto';
-    color: #FFFFFF;
-}
+    #pedido-final {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: none;
+    }
 
-.titulo {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
-    letter-spacing: 0.018em;
-}
+    .confirma {
+        width: 377px;
+        height: 353px;
+        background-color: #50D074;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 9px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto';
+        color: #FFFFFF;
+    }
 
-.prato {
-    display: flex;
-    justify-content: space-between;
-    width: 325px;
-    margin-top: 28px;
-    font-weight: 400;
-}
+    .titulo {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 0.018em;
+    }
 
-.bebida {
-    display: flex;
-    justify-content: space-between;
-    width: 325px;
-    margin-top: 13px;
-    font-weight: 400;
-}
+    .prato {
+        display: flex;
+        justify-content: space-between;
+        width: 325px;
+        margin-top: 28px;
+        font-weight: 400;
+    }
 
-.sobremesa {
-    display: flex;
-    justify-content: space-between;
-    width: 325px;
-    margin-top: 13px;
-    font-weight: 400;
-}
+    .bebida {
+        display: flex;
+        justify-content: space-between;
+        width: 325px;
+        margin-top: 13px;
+        font-weight: 400;
+    }
 
-.total {
-    display: flex;
-    justify-content: space-between;
-    width: 325px;
-    margin-top: 13px;
-}
+    .sobremesa {
+        display: flex;
+        justify-content: space-between;
+        width: 325px;
+        margin-top: 13px;
+        font-weight: 400;
+    }
 
-.total p {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
-    letter-spacing: 0.018em;
-}
+    .total {
+        display: flex;
+        justify-content: space-between;
+        width: 325px;
+        margin-top: 13px;
+    }
 
-.enviar {
-    margin-top: 25px;
-    width: 330px;
-    height: 52px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-    border-radius: 100px;
-    cursor: pointer;
-}
+    .total p {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 0.018em;
+    }
 
-.enviar p {
-    color: #50D074;
-    letter-spacing: 0.018em;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
-}
+    .enviar {
+        margin-top: 25px;
+        width: 330px;
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        border-radius: 100px;
+        cursor: pointer;
+    }
 
-.botaocancela {
-    margin-top: 20px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.018em;
-    color: #FFFFFF;
-    cursor: pointer;
-    background-color: #50D074;
+    .enviar p {
+        color: #50D074;
+        letter-spacing: 0.018em;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .botaocancela {
+        margin-top: 20px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.018em;
+        color: #FFFFFF;
+        cursor: pointer;
+        background-color: #50D074;
+    }
 }
