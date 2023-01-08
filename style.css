@@ -5,8 +5,7 @@
 
 body {
     background-color: #EEEEEE;
-    width: 100vh;
-    height: 100vh;
+    max-width: 500px;
 }
 
 header {
