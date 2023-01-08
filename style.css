@@ -184,8 +184,7 @@ button {
     cursor: pointer;
 }
 
-p,
-#fechar-pedido {
+.texto-fecharpedido {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -193,6 +192,7 @@ p,
     line-height: 23px;
     letter-spacing: 0.018em;
     color: #FFFFFF;
+    width: 200px;
 }
 
 /* Aqui termina o CSS do rodape */

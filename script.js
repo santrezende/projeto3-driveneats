@@ -206,8 +206,12 @@ function verificadora() {
         if (bebida != null) {
             if (sobremesa != null) {
                 botao.style.backgroundColor = "#32B72F";
-                botao.innerHTML = "Fechar Pedido";
                 botao.disabled = false;
+                botao.innerHTML = "Fechar Pedido";
+                botao.style.fontFamily = "Roboto";
+                botao.style.fontSize = "20px";
+                botao.style.fontWeight = "400";
+                botao.style.color = "#FFFFFF"
             }
         }
     }
